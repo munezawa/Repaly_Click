@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Click">
+    </dbname>
+    <version value="4"></version>
+    <list>
+        <mapping class="com.company1.floating_window.Click"></mapping>
+        <mapping class="com.company1.floating_window.allDates"></mapping>
+    </list>
+</litepal>
