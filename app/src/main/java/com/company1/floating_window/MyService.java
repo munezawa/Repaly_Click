@@ -129,7 +129,7 @@ public class MyService extends AccessibleExtract {
                         click.y= (int) event.getY();
                         click.save();
                         sleep(500);
-                        dispatchGestureView((int) event.getX(),(int)event.getY());
+                        dispatchGestureView((int) event.getX(),(int)event.getY()+48);
                         btn.setText("点击了(" + event.getX() + "," + event.getY()+ ","+event.getEventTime()+")");
                         wm.removeView(line);
                         line.addView(button1);

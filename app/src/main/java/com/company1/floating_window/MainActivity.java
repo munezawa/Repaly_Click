@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
                 Toast.makeText(MainActivity.this,clickList.get(position), Toast.LENGTH_SHORT).show();
                 TextView text=(TextView)findViewById(R.id.editTextTextPersonName2);;
-                text.setText(clickList.get(position));
+                text.setText(clickList.get(position).substring(0,clickList.get(position).length()-4));
                 readClicks(text.getText().toString());
             }
         }
