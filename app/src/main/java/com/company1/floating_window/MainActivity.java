@@ -105,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
     }
     private void readClicks(String str) {
         clickList.clear();
-        str=str.substring(0,str.length()-4);
         SharedPreferences reader=getSharedPreferences(str,0);
         List<Integer> x= new ArrayList<Integer>();
         List<Integer> y= new ArrayList<Integer>();

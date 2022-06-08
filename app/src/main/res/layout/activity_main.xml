@@ -4,15 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/icon10"
-    >
+    tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent" >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            app:srcCompat="@drawable/icon5" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,22 +31,28 @@
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0034BA"
                 android:onClick="onClick"
-                android:text="启动悬浮" android:background="#0034BA" android:layout_weight="1"/>
+                android:text="启动悬浮" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#D0CEE3"
                 android:onClick="clicksShow"
-                android:text="显示操作" android:background="#D0CEE3" android:layout_weight="1"/>
+                android:text="显示操作" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#96A2D3"
                 android:onClick="clicksSave"
-                android:text="保存操作" android:background="#96A2D3" android:layout_weight="1"/>
+                android:text="保存操作" />
 
         </LinearLayout>
 
@@ -51,23 +65,29 @@
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FE9371"
                 android:onClick="showHistory"
-                android:text="历史记录" android:background="#FE9371" android:layout_weight="1"/>
+                android:text="历史记录" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FE5133"
                 android:onClick="startAccessible"
-                android:text="执行操作" android:background="#FE5133" android:layout_weight="1"/>
+                android:text="执行操作" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Input_Name" android:background="#FFFFFF" android:layout_weight="1"/>
+                android:text="Input_Name" />
         </LinearLayout>
 
         <ListView
@@ -83,5 +103,13 @@
         <!--                app:srcCompat="@drawable/icon10"/>-->
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="霸天战神\t恶霸天™2077"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
