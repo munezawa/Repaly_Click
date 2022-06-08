@@ -32,27 +32,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#0034BA"
+                android:background="#FFFFFF"
                 android:onClick="onClick"
-                android:text="启动悬浮" />
+                android:text="Enable" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#D0CEE3"
+                android:background="#FFFFFF"
                 android:onClick="clicksShow"
-                android:text="显示操作" />
+                android:text="Recent" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#96A2D3"
+                android:background="#FFFFFF"
                 android:onClick="clicksSave"
-                android:text="保存操作" />
+                android:text="Save" />
 
         </LinearLayout>
 
@@ -66,18 +66,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#FE9371"
+                android:background="#FFFFFF"
                 android:onClick="showHistory"
-                android:text="历史记录" />
+                android:text="History" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#FE5133"
+                android:background="#FFFFFF"
                 android:onClick="startAccessible"
-                android:text="执行操作" />
+                android:text="Execute" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName2"
@@ -86,8 +86,9 @@
                 android:layout_weight="1"
                 android:background="#FFFFFF"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Input_Name" />
+                android:hint = "input_title"
+                android:textColorHint="#DDDDDD"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <ListView
@@ -108,7 +109,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="霸天战神\t恶霸天™2077"
+        android:text="霸天战神\t恶霸天™2047"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/linearLayout" />
 
